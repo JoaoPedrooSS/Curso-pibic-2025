@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4: Sistemas Baseados em Conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="portal-container">
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
+                <h2>Inteligência Artificial</h2>
+            </header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="curso.html" class="nav-link active">Curso</a></li>
+                    <li><a href="referencias.html" class="nav-link">Referências</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="page-content active">
+                <a href="curso.html" class="btn-voltar-topo">← Voltar aos Módulos</a>
+                <h1>Módulo 4: Sistemas Baseados em Conhecimento</h1>
+                <p>Os Sistemas Baseados em Conhecimento (SBC), também conhecidos como Sistemas Especialistas, representam a primeira grande onda de sucesso comercial da Inteligência Artificial. Eles se concentram em resolver problemas complexos imitando o processo de tomada de decisão de um especialista humano.</p>
+
+                <h2>Conceito e Objetivo Principal</h2>
+                <p>Um SBC é um programa de computador que utiliza uma grande base de conhecimento específica e regras de inferência para fornecer soluções ou conselhos de nível especialista em um domínio particular (ex: diagnóstico médico, análise financeira, configuração de hardware).</p>
+                
+                <div class="module">
+                    <h3>O Papel da Engenharia do Conhecimento</h3>
+                    <p>A criação de um SBC depende crucialmente da <b>Engenharia do Conhecimento</b>, que é o processo de adquirir, representar e validar o conhecimento de um especialista humano para que ele possa ser utilizado pelo sistema. É um trabalho intensivo de entrevistas e formalização.</p>
+                </div>
+
+                <h2>Arquitetura Básica de um SBC</h2>
+                <p>Embora variem, a maioria dos Sistemas Baseados em Conhecimento possui três componentes essenciais que interagem entre si:</p>
+
+                <div class="module">
+                    <h3>1. Base de Conhecimento (Knowledge Base - BC)</h3>
+                    <p>É onde o conhecimento do especialista é armazenado. Geralmente, é representado em forma de <b>regras de produção</b> (Ex: SE (condição) ENTÃO (ação/conclusão)), mas também pode usar lógica de predicados ou frames.</p>
+                </div>
+                
+                <div class="module">
+                    <h3>2. Máquina de Inferência (Inference Engine)</h3>
+                    <p>É o "cérebro" do sistema. É o software que aplica as regras da Base de Conhecimento aos dados do problema. Ele determina como raciocinar, geralmente utilizando dois métodos principais:</p>
+                    <ul>
+                        <li><b>Encadeamento para Frente (Forward Chaining):</b> Orientado a dados. Começa com os fatos conhecidos e aplica as regras até chegar a uma conclusão. (Ex: "Se chove E estou sem guarda-chuva, ENTÃO estou molhado").</li>
+                        <li><b>Encadeamento para Trás (Backward Chaining):</b> Orientado a objetivos. Começa com a meta e tenta encontrar os fatos que a suportam. (Ex: Para provar que "Estou molhado", procuro as condições: "Chove" e "Estou sem guarda-chuva").</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>3. Interface de Usuário e Subsistema de Explicação</h3>
+                    <p>Além de interagir com o usuário, um bom SBC deve ser capaz de explicar <b>como</b> chegou a uma determinada conclusão. Essa capacidade de justificar o raciocínio é uma grande vantagem sobre muitos sistemas de aprendizado de máquina de "caixa preta".</p>
+                </div>
+
+                <div class="image-placeholder">
+                    <img src="assets/img/img-sbc-arquitetura.png" alt="Diagrama de Arquitetura de um Sistema Baseado em Conhecimento" class="img-diagrama">
+                </div>
+
+                <h2>Aplicações Históricas e Modernas</h2>
+                <p>Os SBCs foram o foco da IA nas décadas de 70 e 80, mas continuam relevantes em muitos nichos:</p>
+
+                <div class="module">
+                    <h3>Exemplos Notáveis</h3>
+                    <ul>
+                        <li><b>MYCIN (Medicina):</b> Um dos primeiros, usado para diagnosticar infecções bacterianas do sangue e recomendar antibióticos. Famoso por ter um desempenho comparável (ou superior) a médicos não especialistas.</li>
+                        <li><b>DENDRAL (Química):</b> Ajudava a inferir a estrutura molecular de compostos orgânicos a partir de dados espectrométricos.</li>
+                        <li><b>XCON (Configuração):</b> Desenvolvido pela Digital Equipment Corporation (DEC) para configurar pedidos complexos de sistemas de computador (VAX). Economizou milhões para a empresa.</li>
+                    </ul>
+                </div>
+
+                <h2>Vantagens e Desafios</h2>
+
+                <div class="module">
+                    <h3>Vantagens dos SBCs</h3>
+                    <ul>
+                        <li><b>Manter o Conhecimento:</b> Preservam o conhecimento de especialistas que podem se aposentar ou sair da empresa.</li>
+                        <li><b>Explicação (Transparência):</b> Podem justificar suas conclusões, crucial em áreas como medicina e direito.</li>
+                        <li><b>Consistência:</b> Aplicam as mesmas regras de forma consistente, sem cansaço ou erro humano.</li>
+                    </ul>
+                </div>
+                
+                <div class="module">
+                    <h3>Desafios e Limitações</h3>
+                    <ul>
+                        <li><b>O Gargalo da Aquisição de Conhecimento:</b> O processo de extrair o conhecimento de um especialista (Engenharia do Conhecimento) é demorado e caro.</li>
+                        <li><b>Fragilidade:</b> SBCs não se adaptam bem a problemas fora do seu domínio estreito de conhecimento (são "frágeis").</li>
+                        <li><b>Manutenção:</b> Manter a Base de Conhecimento atualizada com novas descobertas e regras é um desafio contínuo.</li>
+                    </ul>
+                </div>
+
+                <a href="curso.html" class="btn-voltar">← Voltar aos Módulos</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
