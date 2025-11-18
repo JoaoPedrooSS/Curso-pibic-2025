@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5: Aprendizado de Máquina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="portal-container">
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
+                <h2>Inteligência Artificial</h2>
+            </header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="curso.html" class="nav-link active">Curso</a></li>
+                    <li><a href="referencias.html" class="nav-link">Referências</a></li>
+                </ul>
+            </nav>
+    </aside>
+        <main class="main-content">
+            <section class="page-content active">
+                <a href="curso.html" class="btn-voltar-topo">← Voltar aos Módulos</a>
+                <h1>Módulo 5: Aprendizado de Máquina e Deep Learning</h1>
+                <p>O Aprendizado de Máquina (Machine Learning – ML) é um dos pilares modernos da Inteligência Artificial e representa a transição da programação explícita para sistemas que aprendem padrões diretamente a partir de dados. Nos últimos anos, com os avanços em Deep Learning, a área se expandiu rapidamente, alcançando resultados excepcionais em visão computacional, processamento de linguagem natural, educação, saúde e mais.</p>
+
+                <h2>Conceito e Objetivo Principal</h2>
+                <p>O Aprendizado de Máquina é um conjunto de métodos nos quais algoritmos constroem conhecimento automaticamente ao identificar padrões em grandes conjuntos de dados. O objetivo principal é permitir que computadores tomem decisões, façam previsões ou reconheçam padrões sem que cada regra seja explicitamente programada.</p>
+                <p>Enquanto as técnicas clássicas se apoiam principalmente em dados estruturados e modelos estatísticos, o Deep Learning aprofunda esse processo ao utilizar redes neurais profundas capazes de extrair padrões e representações mais complexas e hierárquicas.</p>
+                 <div class="image-placeholder">
+                    <img src="assets/img/img-ml.png" class="img-ml">
+                </div>
+
+                <h2>Categorias Fundamentais do Aprendizado de Máquina</h2>
+                <p>Assim como Sistemas Baseados em Conhecimento possuem encadeamentos diferentes, o Machine Learning inclui métodos distintos conforme o tipo de conhecimento fornecido ao algoritmo:</p>
+
+                <div class="module">
+                    <h3>1. Aprendizado Supervisionado</h3>
+                    <p>O modelo aprende a partir de exemplos rotulados.</p>
+                    <p><b>Objetivo:</b> prever uma saída (rótulo) para novos dados.</p>
+                    <p><b>Exemplos:</b></p>
+                    <ul>
+                        <li>Classificação de imagens (gato/cachorro)</li>
+                        <li>Detecção de spam</li>
+                        <li>Predição de notas de alunos</li>
+                    </ul>
+                    <p>Artigos recentes mostram que o deep learning supervisionado domina áreas como visão computacional e reconhecimento de fala.</p>
+                </div>
+
+                <div class="module">
+                    <h3>2. Aprendizado Não Supervisionado</h3>
+                    <p>O algoritmo identifica estruturas ocultas sem receber rótulos.</p>
+                    <p><b>Exemplos:</b></p>
+                    <ul>
+                        <li>Agrupamento de estudantes com perfis de aprendizagem similares</li>
+                        <li>Descoberta de tópicos em textos</li>
+                        <li>Detecção de anomalias</li>
+                    </ul>
+                    <p>Pesquisas recentes destacam seu papel na descoberta de representações, especialmente quando combinado com redes neurais (autoencoders, contrastive learning).</p>
+                </div>
+
+                <div class="module">
+                    <h3>3. Aprendizado por Reforço (Reinforcement Learning)</h3>
+                    <p>O agente aprende por tentativa e erro, recebendo recompensas.</p>
+                    <p><b>Exemplos:</b></p>
+                    <ul>
+                        <li>Sistemas de recomendação educacional adaptativos</li>
+                        <li>Robótica</li>
+                        <li>Jogos (como AlphaGo)</li>
+                    </ul>
+                </div>
+
+                <h2>A Transição para o Deep Learning</h2>
+                <p>O Deep Learning é considerado uma evolução natural em relação ao aprendizado de máquina tradicional. Esse avanço foi possibilitado por uma combinação de fatores que ampliaram significativamente sua capacidade e desempenho, entre eles:</p>
+                <ul>
+                    <li>Aumento do poder computacional (GPUs/TPUs)</li>
+                    <li>Disponibilidade de grandes conjuntos de dados</li>
+                    <li>Melhoria nas arquiteturas de redes neurais</li>
+                </ul>
+                <p>O deep learning automatiza a extração de características, permitindo que modelos aprendam representações complexas de dados de forma hierárquica — algo especialmente útil em imagens, textos e sons.</p>
+
+                <h2>Arquitetura Básica do Deep Learning</h2>
+                <p>Embora existam inúmeros tipos de redes, quase todas compartilham três componentes:</p>
+                <div class="module">
+                    <h3>1. Camada de Entrada</h3>
+                    <p>Recebe os dados (imagens, textos, sequências numéricas). Exemplo: pixels de uma imagem 28x28.</p>
+                </div>
+                <div class="module">
+                    <h3>2. Camadas Ocultas Profundas</h3>
+                    <p>São responsáveis pela transformação progressiva dos dados em representações mais abstratas. Pesquisas recentes mostram que arquiteturas como CNNs, RNNs, Transformers e modelos de difusão lidam com domínios distintos.</p>
+                </div>
+                <div class="module">
+                    <h3>3. Camada de Saída</h3>
+                    <p>Gera previsões, classificações ou representações.</p>
+                </div>
+
+                <h2>Aplicações Recentes e Impacto Atual</h2>
+                <p>Os artigos mais recentes destacam aplicações que vão desde áreas industriais até a educação:</p>
+
+                <div class="module">
+                    <h3>Exemplos Notáveis</h3>
+                    <p><b>Processamento de Linguagem Natural:</b> Transformers e LLMs revolucionaram tarefas como tradução, resumo e tutores inteligentes.</p>
+                    <p><b>Visão Computacional:</b> CNNs e modelos modernos são usados para diagnóstico por imagem, vigilância e análise comportamental.</p>
+                    <p><b>Educação:</b> Pesquisas em Deep Learning for Educational Data Mining mostram aplicações como:</p>
+                    <ul>
+                        <li>Análise de engajamento de estudantes</li>
+                        <li>Predição de desempenho</li>
+                        <li>Sistemas adaptativos de aprendizagem</li>
+                        <li>Análise automática de respostas abertas</li>
+                    </ul>
+                </div>
+
+                <h2>Vantagens e Desafios do Machine Learning e Deep Learning</h2>
+                <div class="module">
+                    <h3>Vantagens</h3>
+                    <ul>
+                        <li>Escalabilidade: funcionam bem com grandes volumes de dados.</li>
+                        <li>Automatização: reduzem a necessidade de intervenção humana na extração de características.</li>
+                        <li>Alta precisão: superam abordagens tradicionais em muitos domínios.</li>
+                        <li>Generalização: conseguem aprender padrões complexos.</li>
+                    </ul>
+                </div>
+
+                <div class="module">
+                    <h3>Desafios</h3>
+                    <ul>
+                        <li><b>O Problema da Interpretabilidade:</b> Modelos profundos ainda são considerados "caixas pretas", dificultando explicações (apesar dos avanços em XAI – Explainable AI).</li>
+                        <li><b>Dependência de Grandes Conjuntos de Dados:</b> Treinamento eficaz exige muitas amostras, o que nem sempre é possível na educação.</li>
+                        <li><b>Custo Computacional:</b> Treinar grandes modelos exige alto poder computacional.</li>
+                        <li><b>Vieses nos Dados:</b> Modelos podem reproduzir (ou ampliar) desigualdades presentes nas bases de treinamento.</li>
+                    </ul>
+                </div>
+
+                <a href="curso.html" class="btn-voltar">← Voltar aos Módulos</a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
