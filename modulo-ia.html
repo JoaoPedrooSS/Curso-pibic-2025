@@ -8,19 +8,36 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<script src="module-nav.js" defer></script>
 </head>
 <body>
+	<nav class="top-navbar">
+		<div class="navbar-container">
+			<ul class="navbar-links">
+				<li><a href="index.html" class="navbar-link">Início</a></li>
+				<li><a href="curso.html" class="navbar-link active">Curso</a></li>
+				<li><a href="#sobre" class="navbar-link">Sobre</a></li>
+				<li><a href="#contato" class="navbar-link">Contato</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<div class="portal-container">
 		<aside class="sidebar">
 			<header class="sidebar-header">
-				<img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
-				<h2>Inteligência Artificial</h2>
+				<a href="curso.html" class="back-to-modules">← Voltar aos Módulos</a>
+				<h2>Módulo 6: IA Generativa</h2>
 			</header>
-			<nav class="main-nav">
+			<nav class="main-nav module-nav">
 				<ul>
-					<li><a href="index.html" class="nav-link">Início</a></li>
-					<li><a href="curso.html" class="nav-link active">Curso</a></li>
+					<li><a href="#conceito" class="nav-link">Conceito e Objetivo</a></li>
+					<li><a href="#fundamentos" class="nav-link">Fundamentos e Tecnologias</a></li>
+					<li><a href="#arquitetura" class="nav-link">Como Funciona a IAG</a></li>
+					<li><a href="#aplicacoes" class="nav-link">Aplicações Modernas</a></li>
+					<li><a href="#exemplos" class="nav-link">Exemplos Notáveis</a></li>
+					<li><a href="#vantagens" class="nav-link">Vantagens</a></li>
+					<li><a href="#desafios" class="nav-link">Desafios e Limitações</a></li>
+					<li><a href="#referencias" class="nav-link">Referências</a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -28,10 +45,10 @@
 		<main class="main-content">
 			<section class="page-content active">
 				<a href="curso.html" class="btn-voltar-topo">← Voltar aos Módulos</a>
-				<h1>Módulo 6: Inteligência Artificial Generativa (IAG)</h1>
-				<p>A Inteligência Artificial Generativa (IAG) representa uma das evoluções mais marcantes da IA moderna. Diferentemente dos sistemas tradicionais que apenas classificam, predizem ou reconhecem padrões, os modelos generativos são capazes de criar novos conteúdos, como texto, imagem, áudio, vídeo, código e até simulações complexas. Seu surgimento recente e impacto global colocam essa tecnologia como um dos pilares da atual revolução da IA.</p>
+			<h1>Módulo 6: Inteligência Artificial Generativa (IAG)</h1>
+			<p>A Inteligência Artificial Generativa (IAG) representa uma das evoluções mais marcantes da IA moderna. Diferentemente dos sistemas tradicionais que apenas classificam, predizem ou reconhecem padrões, os modelos generativos são capazes de criar novos conteúdos, como texto, imagem, áudio, vídeo, código e até simulações complexas. Seu surgimento recente e impacto global colocam essa tecnologia como um dos pilares da atual revolução da IA.</p>
 
-				<h2>Conceito e Objetivo Principal</h2>
+			<h2 id="conceito">Conceito e Objetivo Principal</h2>
 				<p>A IA Generativa é um conjunto de técnicas e modelos capazes de aprender padrões a partir de grandes volumes de dados e, a partir disso, gerar novas instâncias que seguem esses mesmos padrões.</p>
 				<p>Seu objetivo principal é produzir conteúdo original ou altamente coerente dentro de um contexto, como:</p>
 				<ul>
@@ -40,10 +57,10 @@
 					<li>criar código funcional</li>
 					<li>sintetizar vozes e músicas</li>
 					<li>construir simulações ou dados sintéticos</li>
-				</ul>
-				<p>Diferente de modelos discriminativos (que apenas classificam ou decidem), os sistemas generativos produzem.</p>
+			</ul>
+			<p>Diferente de modelos discriminativos (que apenas classificam ou decidem), os sistemas generativos produzem.</p>
 
-				<h2>Fundamentos e Tecnologias-Chave</h2>
+			<h2 id="fundamentos">Fundamentos e Tecnologias-Chave</h2>
 				<p>A ascensão da IA Generativa foi impulsionada por avanços em três pilares fundamentais:</p>
 
 				<div class="module">
@@ -60,10 +77,10 @@
 
 				<div class="module">
 					<h3>3. Treinamento em larga escala</h3>
-					<p>O avanço em hardware (GPUs, TPUs) e a disponibilidade massiva de dados permitiram treinar modelos de enorme capacidade, algo impossível décadas atrás.</p>
-				</div>
+				<p>O avanço em hardware (GPUs, TPUs) e a disponibilidade massiva de dados permitiram treinar modelos de enorme capacidade, algo impossível décadas atrás.</p>
+			</div>
 
-				<h2>Como Funciona a IAG (Visão Geral da Arquitetura)</h2>
+			<h2 id="arquitetura">Como Funciona a IAG (Visão Geral da Arquitetura)</h2>
 				<p>Apesar da grande complexidade interna, a arquitetura conceitual da IA generativa pode ser entendida em três componentes principais:</p>
 
 				<div class="module">
@@ -78,10 +95,10 @@
 
 				<div class="module">
 					<h3>3. Interface e Ferramentas de Interação</h3>
-					<p>É a camada que permite ao usuário conversar com o sistema generativo: chats conversacionais, geradores de imagem por prompt, ferramentas de edição multimodal e APIs integradas em softwares.</p>
-				</div>
+				<p>É a camada que permite ao usuário conversar com o sistema generativo: chats conversacionais, geradores de imagem por prompt, ferramentas de edição multimodal e APIs integradas em softwares.</p>
+			</div>
 
-				<h2>Aplicações Modernas da IA Generativa</h2>
+			<h2 id="aplicacoes">Aplicações Modernas da IA Generativa</h2>
 				<p>A IA generativa está presente em praticamente todos os setores:</p>
 
 				<div class="module">
@@ -126,12 +143,10 @@
 						<li>atendimento automatizado</li>
 						<li>criação de resumos, relatórios e insights</li>
 						<li>automação de processos repetitivos</li>
-					</ul>
-				</div>
+				</ul>
+			</div>
 
-				<h2>Exemplos Notáveis da IA Generativa</h2>
-
-				<div class="logos-grid">
+			<h2 id="exemplos">Exemplos Notáveis da IA Generativa</h2>				<div class="logos-grid">
 					<div class="module">
 						<img src="assets/img/logos-ia/chatgpt.png" alt="ChatGPT logo" class="logo-example">
 						<h3>ChatGPT (OpenAI)</h3>
@@ -157,8 +172,8 @@
 					</div>
 				</div>
 
-				<h2>Vantagens da IA Generativa</h2>
-				<div class="module">
+			<h2 id="vantagens">Vantagens da IA Generativa</h2>
+			<div class="module">
 					<h3>Produção Criativa e Automação</h3>
 					<p>Capaz de produzir conteúdo original rapidamente, aumentando criatividade e produtividade.</p>
 				</div>
@@ -172,10 +187,10 @@
 				</div>
 				<div class="module">
 					<h3>Personalização</h3>
-					<p>Adapta respostas ao estilo e necessidades do usuário.</p>
-				</div>
+				<p>Adapta respostas ao estilo e necessidades do usuário.</p>
+			</div>
 
-				<h2>Desafios e Limitações</h2>
+			<h2 id="desafios">Desafios e Limitações</h2>
 				<div class="module">
 					<h3>Alucinações</h3>
 					<p>Modelos podem gerar informações incorretas com aparência de credibilidade.</p>
@@ -197,7 +212,7 @@
 				<p>Discutida globalmente, especialmente em áreas como saúde, direito e educação.</p>
 			</div>
 
-			<h2>Referências Bibliográficas</h2>
+			<h2 id="referencias">Referências Bibliográficas</h2>
 			<div class="module">
 				<ul class="reference-list">
 					<li>de Sousa, H. e Cruz, D. M. Capacitando Educadores com IA Generativa: Implicações na Educação. In: Simpósio Brasileiro de Informática na Educação, 35, 2024, Rio de Janeiro.</li>

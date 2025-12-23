@@ -8,19 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="module-nav.js" defer></script>
 </head>
 <body>
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <ul class="navbar-links">
+                <li><a href="index.html" class="navbar-link">Início</a></li>
+                <li><a href="curso.html" class="navbar-link active">Curso</a></li>
+                <li><a href="#sobre" class="navbar-link">Sobre</a></li>
+                <li><a href="#contato" class="navbar-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="portal-container">
         <aside class="sidebar">
             <header class="sidebar-header">
-                <img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
-                <h2>Inteligência Artificial</h2>
+                <a href="curso.html" class="back-to-modules">← Voltar aos Módulos</a>
+                <h2>Módulo 2: Dado, Informação e Conhecimento</h2>
             </header>
-            <nav class="main-nav">
+            <nav class="main-nav module-nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="curso.html" class="nav-link active">Curso</a></li>
+                    <li><a href="#piramide" class="nav-link">A Pirâmide do Conhecimento</a></li>
+                    <li><a href="#etapas" class="nav-link">As Três Etapas na Prática</a></li>
+                    <li><a href="#transformacao" class="nav-link">IA Transforma Informação</a></li>
+                    <li><a href="#etica" class="nav-link">Desafios Éticos</a></li>
+                    <li><a href="#referencias" class="nav-link">Referências</a></li>
                 </ul>
             </nav>
         </aside>
@@ -31,14 +45,14 @@
                 <h1>Módulo 2: Dado, Informação e Conhecimento</h1>
                 <p>Para que um computador seja "inteligente", ele não pode apenas armazenar fatos brutos; ele precisa processá-los, entendê-los e agir com base neles. Esta progressão, frequentemente chamada de "Pirâmide DIK", é a base de como a IA funciona.</p>
 
-                <h2>A Pirâmide do Conhecimento (DIK)</h2>
+                <h2 id="piramide">A Pirâmide do Conhecimento (DIK)</h2>
                 <p>A relação entre esses três conceitos é visualizada como uma pirâmide, onde cada nível agrega valor ao anterior.</p>
                 
                 <div class="image-placeholder">
                     <img src="assets/img/img-piramide-dik.jpg" alt="img-piramide-dik" class="img-piramide-dik">
                 </div>
 
-                <h2>As Três Etapas na Prática</h2>
+                <h2 id="etapas">As Três Etapas na Prática</h2>
 
                 <div class="module">
                     <h3>1. Dados</h3>
@@ -63,7 +77,7 @@
                     <p><b>Exemplo Escolar (Análise de um Professor):</b> "Analisando as *informações* do João (notas e frequência), vejo um *padrão*: ele tira notas boas (7.0, 8.5) mas sua frequência é baixa (85%). Sua nota mais baixa (6.0) foi no dia seguinte a uma falta. <b>Decisão/Conhecimento:</b> O problema do João não é de compreensão, mas de engajamento e frequência. Vou conversar com ele sobre as faltas."</p>
                 </div>
 
-                <h2>Como a IA Transforma Informação em Conhecimento Pedagógico</h2>
+                <h2 id="transformacao">Como a IA Transforma Informação em Conhecimento Pedagógico</h2>
                 <p>Um professor faz a análise (Informação -> Conhecimento) para um aluno. Um sistema de IA, como uma plataforma de "Learning Analytics", faz isso para 5.000 alunos simultaneamente, revelando padrões invisíveis.</p>
 
                 <div class="module">
@@ -77,7 +91,7 @@
                     <p>A IA, neste caso, não armazena apenas dados, ela aplica conhecimento para automatizar decisões que antes exigiam a cognição humana.</p>
                 </div>
                 
-                <h2>Desafios Éticos: Os Dados dos Alunos</h2>
+                <h2 id="etica">Desafios Éticos: Os Dados dos Alunos</h2>
                 <p>Como educadores, não podemos falar de dados sem falar de ética. Este é um ponto central do letramento em IA: a utilização consciente e segura.</p>
 
                 <div class="module">
@@ -91,7 +105,7 @@
                     <p>Um sistema de IA é uma ferramenta poderosa para gerar conhecimento, mas o professor é o guardião ético de como esse conhecimento é aplicado.</p>
                 </div>
 
-                <h2>Referências Bibliográficas</h2>
+                <h2 id="referencias">Referências Bibliográficas</h2>
                 <div class="module">
                     <ul class="reference-list">
                         <li>ACKOFF, R. L. From data to wisdom. Journal of Applied Systems Analysis, v. 16, n. 1, p. 3-9, 1989.</li>

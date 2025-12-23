@@ -8,36 +8,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="module-nav.js" defer></script>
 </head>
 <body>
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <ul class="navbar-links">
+                <li><a href="index.html" class="navbar-link">Início</a></li>
+                <li><a href="curso.html" class="navbar-link active">Curso</a></li>
+                <li><a href="#sobre" class="navbar-link">Sobre</a></li>
+                <li><a href="#contato" class="navbar-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="portal-container">
         <aside class="sidebar">
             <header class="sidebar-header">
-                <img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
-                <h2>Inteligência Artificial</h2>
+                <a href="curso.html" class="back-to-modules">← Voltar aos Módulos</a>
+                <h2>Módulo 5: Aprendizado de Máquina</h2>
             </header>
-            <nav class="main-nav">
+            <nav class="main-nav module-nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="curso.html" class="nav-link active">Curso</a></li>
+                    <li><a href="#conceito" class="nav-link">Conceito e Objetivo</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorias Fundamentais</a></li>
+                    <li><a href="#deep-learning" class="nav-link">Transição para Deep Learning</a></li>
+                    <li><a href="#arquitetura" class="nav-link">Arquitetura Básica</a></li>
+                    <li><a href="#aplicacoes" class="nav-link">Aplicações Recentes</a></li>
+                    <li><a href="#vantagens" class="nav-link">Vantagens e Desafios</a></li>
+                    <li><a href="#referencias" class="nav-link">Referências</a></li>
                 </ul>
             </nav>
-    </aside>
+        </aside>
         <main class="main-content">
             <section class="page-content active">
                 <a href="curso.html" class="btn-voltar-topo">← Voltar aos Módulos</a>
                 <h1>Módulo 5: Aprendizado de Máquina e Deep Learning</h1>
                 <p>O Aprendizado de Máquina (Machine Learning – ML) é um dos pilares modernos da Inteligência Artificial e representa a transição da programação explícita para sistemas que aprendem padrões diretamente a partir de dados. Nos últimos anos, com os avanços em Deep Learning, a área se expandiu rapidamente, alcançando resultados excepcionais em visão computacional, processamento de linguagem natural, educação, saúde e mais.</p>
 
-                <h2>Conceito e Objetivo Principal</h2>
+                <h2 id="conceito">Conceito e Objetivo Principal</h2>
                 <p>O Aprendizado de Máquina é um conjunto de métodos nos quais algoritmos constroem conhecimento automaticamente ao identificar padrões em grandes conjuntos de dados. O objetivo principal é permitir que computadores tomem decisões, façam previsões ou reconheçam padrões sem que cada regra seja explicitamente programada.</p>
                 <p>Enquanto as técnicas clássicas se apoiam principalmente em dados estruturados e modelos estatísticos, o Deep Learning aprofunda esse processo ao utilizar redes neurais profundas capazes de extrair padrões e representações mais complexas e hierárquicas.</p>
                  <div class="image-placeholder">
                     <img src="assets/img/img-ml.png" class="img-ml">
                 </div>
 
-                <h2>Categorias Fundamentais do Aprendizado de Máquina</h2>
+                <h2 id="categorias">Categorias Fundamentais do Aprendizado de Máquina</h2>
                 <p>Assim como Sistemas Baseados em Conhecimento possuem encadeamentos diferentes, o Machine Learning inclui métodos distintos conforme o tipo de conhecimento fornecido ao algoritmo:</p>
 
                 <div class="module">
@@ -76,7 +92,7 @@
                     </ul>
                 </div>
 
-                <h2>A Transição para o Deep Learning</h2>
+                <h2 id="deep-learning">A Transição para o Deep Learning</h2>
                 <p>O Deep Learning é considerado uma evolução natural em relação ao aprendizado de máquina tradicional. Esse avanço foi possibilitado por uma combinação de fatores que ampliaram significativamente sua capacidade e desempenho, entre eles:</p>
                 <ul>
                     <li>Aumento do poder computacional (GPUs/TPUs)</li>
@@ -85,7 +101,7 @@
                 </ul>
                 <p>O deep learning automatiza a extração de características, permitindo que modelos aprendam representações complexas de dados de forma hierárquica — algo especialmente útil em imagens, textos e sons.</p>
 
-                <h2>Arquitetura Básica do Deep Learning</h2>
+                <h2 id="arquitetura">Arquitetura Básica do Deep Learning</h2>
                 <p>Embora existam inúmeros tipos de redes, quase todas compartilham três componentes:</p>
                 <div class="module">
                     <h3>1. Camada de Entrada</h3>
@@ -100,7 +116,7 @@
                     <p>Gera previsões, classificações ou representações.</p>
                 </div>
 
-                <h2>Aplicações Recentes e Impacto Atual</h2>
+                <h2 id="aplicacoes">Aplicações Recentes e Impacto Atual</h2>
                 <p>Os artigos mais recentes destacam aplicações que vão desde áreas industriais até a educação:</p>
 
                 <div class="module">
@@ -116,7 +132,7 @@
                     </ul>
                 </div>
 
-                <h2>Vantagens e Desafios do Machine Learning e Deep Learning</h2>
+                <h2 id="vantagens">Vantagens e Desafios do Machine Learning e Deep Learning</h2>
                 <div class="module">
                     <h3>Vantagens</h3>
                     <ul>
@@ -137,7 +153,7 @@
                     </ul>
                 </div>
 
-                <h2>Referências Bibliográficas</h2>
+                <h2 id="referencias">Referências Bibliográficas</h2>
                 <div class="module">
                     <ul class="reference-list">
                         <li>Nguiraze, J. A. O papel da inteligência artificial na detecção de lacunas no processo de ensino e aprendizagem. Revista Multidisciplinar do Nordeste Mineiro, 8(1), 1-14. 2023.</li>

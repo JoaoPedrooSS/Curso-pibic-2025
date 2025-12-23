@@ -8,19 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="module-nav.js" defer></script>
 </head>
 <body>
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <ul class="navbar-links">
+                <li><a href="index.html" class="navbar-link">Início</a></li>
+                <li><a href="curso.html" class="navbar-link active">Curso</a></li>
+                <li><a href="#sobre" class="navbar-link">Sobre</a></li>
+                <li><a href="#contato" class="navbar-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="portal-container">
         <aside class="sidebar">
             <header class="sidebar-header">
-                <img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
-                <h2>Inteligência Artificial</h2>
+                <a href="curso.html" class="back-to-modules">← Voltar aos Módulos</a>
+                <h2>Módulo 1: Fundamentos da IA</h2>
             </header>
-            <nav class="main-nav">
+            <nav class="main-nav module-nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="curso.html" class="nav-link active">Curso</a></li>
+                    <li><a href="#historia" class="nav-link">História e Origens</a></li>
+                    <li><a href="#classificacoes" class="nav-link">Classificações da IA</a></li>
+                    <li><a href="#tipos-pratica" class="nav-link">Tipos de IA na Prática Escolar</a></li>
+                    <li><a href="#mito-realidade" class="nav-link">Mito vs. Realidade</a></li>
+                    <li><a href="#referencias" class="nav-link">Referências</a></li>
                 </ul>
             </nav>
         </aside>
@@ -31,7 +45,7 @@
                 <h1>Módulo 1: Fundamentos da Inteligência Artificial</h1>
                 <p>Este módulo explora a ideia de criar métodos ou dispositivos que simulem a capacidade da mente humana de raciocinar. Vamos mergulhar na história, nos objetivos e nas classificações que definem este campo.</p>
 
-                <h2>História e Origens</h2>
+                <h2 id="historia">História e Origens</h2>
                 <p>As primeiras práticas relacionadas à criação da inteligência artificial começaram durante a Segunda Guerra Mundial. Um dos principais responsáveis foi Alan Turing que, após criar uma máquina que podia decifrar estratégias nazistas, publicou um artigo seminal em 1950 chamado "COMPUTING MACHINERY AND INTELLIGENCE".</p>
                 
                 <div class="image-placeholder">
@@ -48,7 +62,7 @@
                     <p>O desenvolvimento da IA não foi linear. Os períodos chamados de "AI Winter" (Inverno da IA), entre 1975-1980 e 1987-1993, marcaram uma grande escassez nos recursos e investimentos nos estudos e avanços da área, geralmente após grandes promessas não serem cumpridas a tempo.</p>
                 </div>
 
-                <h2>Classificações da IA (Teoria vs. Prática)</h2>
+                <h2 id="classificacoes">Classificações da IA (Teoria vs. Prática)</h2>
                 <p>Para um educador, é importante entender duas formas de classificar a IA: a teórica (Fraca vs. Forte) e a prática (os tipos que você usará).</p>
 
                 <div class="module">
@@ -57,7 +71,7 @@
                     <p><b>IA Forte (Strong AI):</b> É uma hipótese de um sistema capaz de aprender, raciocinar e tomar decisões em contextos diversos com a mesma flexibilidade cognitiva de um ser humano, chegando a manifestar consciência. Até o momento, isso permanece no campo teórico e filosófico.</p>
                 </div>
                 
-                <h2>Tipos de IA na Prática Escolar</h2>
+                <h2 id="tipos-pratica">Tipos de IA na Prática Escolar</h2>
                 <p>Em seu dia a dia, você não encontrará uma "IA Forte", mas sim aplicações de "IA Fraca" especializadas. As mais comuns são:</p>
 
                 <div class="module">
@@ -85,7 +99,7 @@
                     <img src="assets/img/img-infografo.png" alt="img-infografo" class="img-infografo">
                 </div>
 
-                <h2>Mito vs. Realidade: A IA nos Estudos</h2>
+                <h2 id="mito-realidade">Mito vs. Realidade: A IA nos Estudos</h2>
                 <p>Uma das maiores preocupações dos educadores é o impacto da IA no processo de aprendizagem do aluno. O receio é que ela possa ser usada como uma "muleta" que impede o pensamento crítico.</p>
 
                 <div class="module">
@@ -106,7 +120,7 @@
                     <p>Portanto, o desafio do letramento em IA não é proibir a ferramenta, mas sim capacitar professores e alunos a usá-la de forma <b>crítica, ética e eficaz</b>.</p>
                 </div>
 
-                <h2>Referências Bibliográficas</h2>
+                <h2 id="referencias">Referências Bibliográficas</h2>
                 <div class="module">
                     <ul class="reference-list">
                         <li>BARBOSA, Xênia de Castro; BEZERRA, Ruth Ferreira. Breve introdução à história da inteligência artificial. Jamaxi, v. 4, n. 2, p. 90-97, 2020.</li>

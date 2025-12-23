@@ -8,19 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="module-nav.js" defer></script>
 </head>
 <body>
+    <nav class="top-navbar">
+        <div class="navbar-container">
+            <ul class="navbar-links">
+                <li><a href="index.html" class="navbar-link">Início</a></li>
+                <li><a href="curso.html" class="navbar-link active">Curso</a></li>
+                <li><a href="#sobre" class="navbar-link">Sobre</a></li>
+                <li><a href="#contato" class="navbar-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="portal-container">
         <aside class="sidebar">
             <header class="sidebar-header">
-                <img src="assets/img/unb_logo.png" alt="Logo UNB" class="logo-unb">
-                <h2>Inteligência Artificial</h2>
+                <a href="curso.html" class="back-to-modules">← Voltar aos Módulos</a>
+                <h2>Módulo 3: Aprendizagem Significativa</h2>
             </header>
-            <nav class="main-nav">
+            <nav class="main-nav module-nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link">Início</a></li>
-                    <li><a href="curso.html" class="nav-link active">Curso</a></li>
+                    <li><a href="#conceito" class="nav-link">O que é Aprendizagem Significativa?</a></li>
+                    <li><a href="#desafio" class="nav-link">Desafio do Professor e a IA</a></li>
+                    <li><a href="#organizador" class="nav-link">Organizador Prévio Adaptativo</a></li>
+                    <li><a href="#mapas" class="nav-link">IA e Mapas Conceituais</a></li>
+                    <li><a href="#reflexao" class="nav-link">Reflexão</a></li>
+                    <li><a href="#referencias" class="nav-link">Referências</a></li>
                 </ul>
             </nav>
         </aside>
@@ -31,7 +46,7 @@
                 <h1>Módulo 3: Teoria da Aprendizagem Significativa (TAS)</h1>
                 <p>Este módulo é a conexão central do nosso curso. Abordamos a teoria de David Ausubel, que defende que o <b>conhecimento prévio</b> é o fator que mais influencia a aprendizagem. Vamos ver como a IA pode nos ajudar a aplicar essa teoria na prática.</p>
 
-                <h2>O que é Aprendizagem Significativa?</h2>
+                <h2 id="conceito">O que é Aprendizagem Significativa?</h2>
                 <p>Aprender significativamente é o oposto de apenas decorar. É quando o aluno consegue conectar um conhecimento novo a algo que ele já entende, criando uma estrutura cognitiva. Esse processo de "ancoragem" de novas ideias em conhecimentos prévios é chamado de <b>subsunção</b>.</p>
                 <p>Os conhecimentos prévios que servem como âncora são chamados por Ausubel de <b>subsunçores</b> ou "ideias-âncora".</p>
 
@@ -44,11 +59,11 @@
                     </ol>
                 </div>
 
-                <h2>O Desafio do Professor e a Solução da IA</h2>
+                <h2 id="desafio">O Desafio do Professor e a Solução da IA</h2>
                 <p>A teoria de Ausubel é perfeita, mas tem um desafio prático: em uma sala com 30 alunos, cada um tem "conhecimentos prévios" diferentes. Como um professor pode "ancorar" a mesma aula de 30 maneiras diferentes?</p>
                 <p>É aqui que a IA se torna uma ferramenta de <b>personalização do ensino</b>, como propõe este projeto de pesquisa.</p>
 
-                <h2>Exemplo Prático: IA como "Organizador Prévio" Adaptativo</h2>
+                <h2 id="organizador">Exemplo Prático: IA como "Organizador Prévio" Adaptativo</h2>
                 <p>Um <b>Organizador Prévio</b> é um material (um texto, um vídeo, uma discussão) que o professor apresenta <b>antes</b> da aula para ativar os subsunçores dos alunos. A IA pode fazer isso de forma personalizada.</p>
                 
                 <div class="module">
@@ -63,7 +78,7 @@
                     <p><b>Resultado:</b> Ambos os alunos chegam à aula do professor "prontos" para ancorar os novos conceitos. A IA usou o mesmo princípio pedagógico (TAS) de formas diferentes para personalizar o ensino.</p>
                 </div>
 
-                <h2>IA e Mapas Conceituais</h2>
+                <h2 id="mapas">IA e Mapas Conceituais</h2>
                 <p>Mapas conceituais são uma ferramenta poderosa da TAS para organizar e visualizar o conhecimento. A IA Generativa é excelente para trabalhar com eles.</p>
 
                 <div class="image-placeholder">
@@ -79,7 +94,7 @@
                     </ul>
                 </div>
                 
-                <h2>Reflexão: Aprendizagem Significativa ou Mecânica?</h2>
+                <h2 id="reflexao">Reflexão: Aprendizagem Significativa ou Mecânica?</h2>
                 <p>A IA pode ser uma aliada incrível da teoria de Ausubel, mas também pode ser um perigo se mal utilizada.</p>
 
                 <div class="module">
@@ -92,7 +107,7 @@
                     </ul>
                 </div>
 
-                <h2>Referências Bibliográficas</h2>
+                <h2 id="referencias">Referências Bibliográficas</h2>
                 <div class="module">
                     <ul class="reference-list">
                         <li>Ausubel, D. P.; Novak, J. D.; Hanesian, H. Psicología Educacional. Rio de Janeiro: Editora Interamericana. 1980.</li>
