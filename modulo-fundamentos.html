@@ -25,7 +25,6 @@
     <div class="portal-container">
         <aside class="sidebar">
             <header class="sidebar-header">
-                <a href="curso.html" class="back-to-modules">← Voltar aos Módulos</a>
                 <h2>Módulo 1: Fundamentos da IA</h2>
             </header>
             <nav class="main-nav module-nav">
@@ -34,6 +33,10 @@
                     <li><a href="#classificacoes" class="nav-link">Classificações da IA</a></li>
                     <li><a href="#tipos-pratica" class="nav-link">Tipos de IA na Prática Escolar</a></li>
                     <li><a href="#mito-realidade" class="nav-link">Mito vs. Realidade</a></li>
+                    <li><a href="#piramide" class="nav-link">A Pirâmide do Conhecimento</a></li>
+                    <li><a href="#etapas" class="nav-link">As Três Etapas na Prática</a></li>
+                    <li><a href="#transformacao" class="nav-link">IA Transforma Informação</a></li>
+                    <li><a href="#etica" class="nav-link">Desafios Éticos</a></li>
                     <li><a href="#referencias" class="nav-link">Referências</a></li>
                 </ul>
             </nav>
@@ -119,11 +122,79 @@
                     </ul>
                     <p>Portanto, o desafio do letramento em IA não é proibir a ferramenta, mas sim capacitar professores e alunos a usá-la de forma <b>crítica, ética e eficaz</b>.</p>
                 </div>
+            </section>
+            <section id="dado" class="page-content active">
+                <h1>Dado, Informação e Conhecimento</h1>
+                <p>Para que um computador seja "inteligente", ele não pode apenas armazenar fatos brutos; ele precisa processá-los, entendê-los e agir com base neles. Esta progressão, frequentemente chamada de "Pirâmide DIK", é a base de como a IA funciona.</p>
+
+                <h2 id="piramide">A Pirâmide do Conhecimento (DIK)</h2>
+                <p>A relação entre esses três conceitos é visualizada como uma pirâmide, onde cada nível agrega valor ao anterior.</p>
+                
+                <div class="image-placeholder">
+                    <img src="assets/img/img-piramide-dik.jpg" alt="img-piramide-dik" class="img-piramide-dik">
+                </div>
+
+                <h2 id="etapas">As Três Etapas na Prática</h2>
+
+                <div class="module">
+                    <h3>1. Dados</h3>
+                    <p>São valores brutos, agrupados e sem contexto. São "símbolos quantificáveis".</p>
+                    <p><b>Exemplo Médico:</b> 37.5, "Febre", 10/05/2025.</p>
+                    <p><b>Exemplo Escolar:</b> 7.0, 8.5, 6.0, "Presente", "Ausente", 9.0.</p>
+                    <p>Neste nível, os números e textos não significam nada. São apenas símbolos armazenados em um banco de dados ou planilha.</p>
+                </div>
+                
+                <div class="module">
+                    <h3>2. Informação</h3>
+                    <p>A informação é o resultado de quando os dados são processados, agrupados, relacionados e contextualizados. Ela responde perguntas como "Quem?", "Onde" e "Quando". A maioria dos sistemas de gestão escolar opera neste nível.</p>
+                    <p><b>Exemplo Médico:</b> {Paciente: 123, Sintoma: "Febre", Medição: 37.5, Data: 10/05/2025}.</p>
+                    <p><b>Exemplo Escolar:</b> {Aluno: 'João Sousa'}, {Turma: '9ºA'}, {Disciplina: 'História'}, {Notas: [7.0, 8.5, 6.0]}, {Frequência: '85%'}.</p>
+                    <p>Agora temos um registro. Sabemos que o '7.0' é a nota da P1 de História do João. Isso é <b>informação</b>.</p>
+                </div>
+
+                <div class="module">
+                    <h3>3. Conhecimento</h3>
+                    <p>O conhecimento é o que a IA almeja. É a capacidade de aplicar a informação para entender padrões, fazer previsões e tomar decisões. O conhecimento entende o "Como" e o "Porquê".</p>
+                    <p><b>Exemplo Médico:</b> "A febre de 37.5, combinada com outros sintomas e histórico, indica 85% de chance de infecção A. Recomenda-se o protocolo B".</p>
+                    <p><b>Exemplo Escolar (Análise de um Professor):</b> "Analisando as *informações* do João (notas e frequência), vejo um *padrão*: ele tira notas boas (7.0, 8.5) mas sua frequência é baixa (85%). Sua nota mais baixa (6.0) foi no dia seguinte a uma falta. <b>Decisão/Conhecimento:</b> O problema do João não é de compreensão, mas de engajamento e frequência. Vou conversar com ele sobre as faltas."</p>
+                </div>
+
+                <h2 id="transformacao">Como a IA Transforma Informação em Conhecimento Pedagógico</h2>
+                <p>Um professor faz a análise (Informação -> Conhecimento) para um aluno. Um sistema de IA, como uma plataforma de "Learning Analytics", faz isso para 5.000 alunos simultaneamente, revelando padrões invisíveis.</p>
+
+                <div class="module">
+                    <h3>Exemplo Prático: A Plataforma de IA</h3>
+                    <p>A plataforma analisa a <b>informação</b> de todos os alunos do 9º ano e gera <b>conhecimento</b> para o professor:</p>
+                    <ul>
+                        <li><b>Conhecimento (Padrão):</b> "Professora, 70% dos alunos que erraram a Questão 5 da sua prova também erraram as Questões 8 e 12."</li>
+                        <li><b>Conhecimento (Inferência):</b> "Todas essas questões exigem o conceito de 'Regra de Três Composta'. Os alunos parecem não ter compreendido este tópico específico."</li>
+                        <li><b>Conhecimento (Decisão/Recomendação):</b> "Sugerimos aplicar um exercício de reforço focado em 'Regra de Três Composta' antes de avançar para o próximo capítulo."</li>
+                    </ul>
+                    <p>A IA, neste caso, não armazena apenas dados, ela aplica conhecimento para automatizar decisões que antes exigiam a cognição humana.</p>
+                </div>
+                
+                <h2 id="etica">Desafios Éticos: Os Dados dos Alunos</h2>
+                <p>Como educadores, não podemos falar de dados sem falar de ética. Este é um ponto central do letramento em IA: a utilização consciente e segura.</p>
+
+                <div class="module">
+                    <h3>Reflexão: Para quem servem os dados?</h3>
+                    <p>Ao usar uma plataforma de IA (especialmente uma gratuita), os professores devem se perguntar:</p>
+                    <ul>
+                        <li><b>Privacidade:</b> Quem é o dono dos dados de notas e frequência dos meus alunos? A empresa da plataforma?</li>
+                        <li><b>Consentimento:</b> Os pais e responsáveis autorizaram o uso desses dados para treinar um algoritmo de IA?</li>
+                        <li><b>Viés Algorítmico:</b> Se os dados históricos (informação) da escola mostram que alunas mulheres desistem mais de aulas de robótica, a IA pode (erroneamente) *aprender* esse viés e *recomendar* (conhecimento) menos aulas de robótica para novas alunas?</li>
+                    </ul>
+                    <p>Um sistema de IA é uma ferramenta poderosa para gerar conhecimento, mas o professor é o guardião ético de como esse conhecimento é aplicado.</p>
+                </div>
 
                 <h2 id="referencias">Referências Bibliográficas</h2>
                 <div class="module">
                     <ul class="reference-list">
-                        <li>BARBOSA, Xênia de Castro; BEZERRA, Ruth Ferreira. Breve introdução à história da inteligência artificial. Jamaxi, v. 4, n. 2, p. 90-97, 2020.</li>
+                        <li>ACKOFF, R. L. From data to wisdom. Journal of Applied Systems Analysis, v. 16, n. 1, p. 3-9, 1989.</li>
+                        <li>Nguiraze, J. A. O papel da inteligência artificial na detecção de lacunas no processo de ensino e aprendizagem. Revista Multidisciplinar do Nordeste Mineiro, 8(1), 1-14. 2023.</li>
+                        <li>SETZER, Valdemar W. Dado, Informação, Conhecimento e Competência. [S. l.], 25 maio 2015.</li>
+                        <li>Vicari, R. M.; Brackmann C.; Mizusaki, L.; Galafassi, C. Inteligência Artificial na Educação Básica. São Paulo: Novatec, 2023.</li>
+                          <li>BARBOSA, Xênia de Castro; BEZERRA, Ruth Ferreira. Breve introdução à história da inteligência artificial. Jamaxi, v. 4, n. 2, p. 90-97, 2020.</li>
                         <li>CAXITO, Fabiano. Inteligência Artificial: Aplicações e Tendências. IESDE BRASIL S.A.</li>
                         <li>SICHMAN, J. S. Inteligência artificial e sociedade: avanços e riscos. Estudos Avançados, v. 35, n. 101, p. 37-50, 2021.</li>
                         <li>SILVA, T. M. da; GOMES, A. S.; PIMENTEL, M. A inteligência artificial na educação: os desafios do ChatGPT. Transinformação, v. 36, p. e230045, 2024.</li>
@@ -131,7 +202,7 @@
                         <li>Vicari, R. M.; Brackmann C.; Mizusaki, L.; Galafassi, C. Inteligência Artificial na Educação Básica. São Paulo: Novatec, 2023.</li>
                     </ul>
                 </div>
-
+                
                 <a href="curso.html" class="btn-voltar">← Voltar aos Módulos</a>
             </section>
         </main>

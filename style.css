@@ -4,7 +4,7 @@
     --cor-azul-claro: #0066CC;
     --cor-destaque: #FF6B35;
     --cor-fundo: #f5f7fa;
-    --cor-texto: #2c3e50;
+    --cor-texto: #000000;
     --cor-texto-claro: #ffffff;
     --sombra-padrao: 0 4px 12px rgba(0, 0, 0, 0.1);
     --sombra-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -235,7 +235,7 @@ h2[id] {
 
 .page-content > p {
     font-size: 1.1rem;
-    color: #555;
+    color: #000000;
     margin-bottom: 30px;
 }
 
@@ -287,15 +287,17 @@ h2[id] {
 
 .module p {
     line-height: 1.7;
-    color: #555;
+    color: #000000;
     margin: 0;
 }
 
 .module-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;   
     margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: stretch; 
 }
 
 .logos-grid {
@@ -403,7 +405,7 @@ h2[id] {
 .module ul {
     padding-left: 20px;
     margin: 10px 0 0 0;
-    color: #555;
+    color: #000000;
 }
 
 .module li {
@@ -633,3 +635,8 @@ h2[id] {
         padding: 20px;
     }
 }
+
+#dado {
+    margin-top: 30px;
+}
+
